@@ -2,7 +2,7 @@ import { getMovies, getById, addMovie } from "./db";
 
 const resolvers = {
   Query: {
-    movies: () => getMovies,
+    movies: () => getMovies(),
     movie: (_, { id }) => getById(id),
   },
   Mutation: {
