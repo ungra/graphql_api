@@ -9,7 +9,7 @@ export const getMovies = async (limit, rating) => {
     data: {
       data: { movies },
     },
-  } = await axios(REQUEST_URL, {
+  } = await axios(LIST_MOVIES_URL, {
     params: {
       limit, minimum_rating: rating
     }
